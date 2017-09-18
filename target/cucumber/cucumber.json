@@ -1,0 +1,1114 @@
+[
+  {
+    "id": "rest-api-testing-framework-using-java-rest-assured-or-jayway-libraries",
+    "description": "Raise request(s) using REST Assured library\r\nValidate HTTP response code and parse JSON response using REST Assured library\r\nCross check the server logs for each REST API request\r\nMake sure to run the intended REST API based web application as pre-condition",
+    "name": "REST API testing framework using Java REST Assured or JayWay Libraries",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 675865794,
+              "status": "passed"
+            },
+            "name": "General init",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.general_init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5279009,
+              "status": "passed"
+            },
+            "name": "Basic web application endpoint url is \"http://localhost:8080/imademethink/restfulapi/account_basic/\"",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/imademethink/restfulapi/account_basic/",
+                  "offset": 39
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.basic_web_application_endpoint_url_is(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4596784,
+              "status": "passed"
+            },
+            "name": "Basic user details are",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.basic_user_details_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "particular",
+                  "value"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "password",
+                  "d9aPass"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "first_name",
+                  "Sheldon"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "last_name",
+                  "Cooper"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "gender",
+                  "m"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "signup_secret_question_1_answer",
+                  "Tokyo"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "signup_secret_question_2_answer",
+                  "Toystory"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "rest-api-testing-framework-using-java-rest-assured-or-jayway-libraries;valid-scenario-1",
+        "description": "",
+        "name": "Valid scenario 1",
+        "keyword": "Scenario",
+        "line": 19,
+        "steps": [
+          {
+            "result": {
+              "duration": 10017020546,
+              "status": "passed"
+            },
+            "name": "Valid simple user management application is running",
+            "keyword": "Given ",
+            "line": 20,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.valid_simple_user_management_application_is_running()"
+            }
+          },
+          {
+            "result": {
+              "duration": 217108316,
+              "status": "passed"
+            },
+            "name": "User performs GET signup parameters",
+            "keyword": "When ",
+            "line": 21,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_signup_parameters()"
+            }
+          },
+          {
+            "result": {
+              "duration": 328639455,
+              "status": "passed"
+            },
+            "name": "User performs POST signup with email id \"Happy01@aaa.com\" to create account",
+            "keyword": "And ",
+            "line": 22,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Happy01@aaa.com",
+                  "offset": 41
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_signup_with_email_id_to_create_account(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 150682289,
+              "status": "passed"
+            },
+            "name": "User performs GET to activate account",
+            "keyword": "And ",
+            "line": 23,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_to_activate_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 80381482,
+              "status": "passed"
+            },
+            "name": "User performs POST to signin account",
+            "keyword": "And ",
+            "line": 24,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_to_signin_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 97978177,
+              "status": "passed"
+            },
+            "name": "User performs DELETE to signout account",
+            "keyword": "And ",
+            "line": 25,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_DELETE_to_signout_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 10096013197,
+              "status": "passed"
+            },
+            "name": "Each user action should be successful",
+            "keyword": "Then ",
+            "line": 26,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.each_user_action_should_be_successful()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 3642952,
+              "status": "passed"
+            },
+            "name": "General init",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.general_init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 141150,
+              "status": "passed"
+            },
+            "name": "Basic web application endpoint url is \"http://localhost:8080/imademethink/restfulapi/account_basic/\"",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/imademethink/restfulapi/account_basic/",
+                  "offset": 39
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.basic_web_application_endpoint_url_is(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 209586,
+              "status": "passed"
+            },
+            "name": "Basic user details are",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.basic_user_details_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "particular",
+                  "value"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "password",
+                  "d9aPass"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "first_name",
+                  "Sheldon"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "last_name",
+                  "Cooper"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "gender",
+                  "m"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "signup_secret_question_1_answer",
+                  "Tokyo"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "signup_secret_question_2_answer",
+                  "Toystory"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "rest-api-testing-framework-using-java-rest-assured-or-jayway-libraries;valid-scenario-2",
+        "description": "",
+        "name": "Valid scenario 2",
+        "keyword": "Scenario",
+        "line": 28,
+        "steps": [
+          {
+            "result": {
+              "duration": 138491638,
+              "status": "passed"
+            },
+            "name": "Valid simple user management application is running",
+            "keyword": "Given ",
+            "line": 29,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.valid_simple_user_management_application_is_running()"
+            }
+          },
+          {
+            "result": {
+              "duration": 115324223,
+              "status": "passed"
+            },
+            "name": "User performs GET signup parameters",
+            "keyword": "When ",
+            "line": 30,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_signup_parameters()"
+            }
+          },
+          {
+            "result": {
+              "duration": 122519023,
+              "status": "passed"
+            },
+            "name": "User performs POST signup with email id \"Happy02@aaa.com\" to create account",
+            "keyword": "And ",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Happy02@aaa.com",
+                  "offset": 41
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_signup_with_email_id_to_create_account(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 134803346,
+              "status": "passed"
+            },
+            "name": "User performs GET to activate account",
+            "keyword": "And ",
+            "line": 32,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_to_activate_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 91262432,
+              "status": "passed"
+            },
+            "name": "User performs POST to signin account",
+            "keyword": "And ",
+            "line": 33,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_to_signin_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 120563453,
+              "status": "passed"
+            },
+            "name": "User performs GET account profile",
+            "keyword": "And ",
+            "line": 34,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_account_profile()"
+            }
+          },
+          {
+            "result": {
+              "duration": 102277262,
+              "status": "passed"
+            },
+            "name": "User performs PUT to modify account profile with first name \"Jack\" and last name \"Black\" and \"valid scenario 2\"",
+            "keyword": "And ",
+            "line": 35,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jack",
+                  "offset": 61
+                },
+                {
+                  "val": "Black",
+                  "offset": 82
+                },
+                {
+                  "val": "valid scenario 2",
+                  "offset": 94
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_PUT_to_modify_account_profile_with_first_name_and_last_name(String,String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 70697739,
+              "status": "passed"
+            },
+            "name": "User performs GET account profile to match updated account profile",
+            "keyword": "And ",
+            "line": 36,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_account_profile_to_match_updated_account_profile()"
+            }
+          },
+          {
+            "result": {
+              "duration": 65091947,
+              "status": "passed"
+            },
+            "name": "User performs DELETE to signout account",
+            "keyword": "And ",
+            "line": 37,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_DELETE_to_signout_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 10014111574,
+              "status": "passed"
+            },
+            "name": "Each user action should be successful",
+            "keyword": "Then ",
+            "line": 38,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.each_user_action_should_be_successful()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 2596304,
+              "status": "passed"
+            },
+            "name": "General init",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.general_init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 127890,
+              "status": "passed"
+            },
+            "name": "Basic web application endpoint url is \"http://localhost:8080/imademethink/restfulapi/account_basic/\"",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/imademethink/restfulapi/account_basic/",
+                  "offset": 39
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.basic_web_application_endpoint_url_is(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 190339,
+              "status": "passed"
+            },
+            "name": "Basic user details are",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.basic_user_details_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "particular",
+                  "value"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "password",
+                  "d9aPass"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "first_name",
+                  "Sheldon"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "last_name",
+                  "Cooper"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "gender",
+                  "m"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "signup_secret_question_1_answer",
+                  "Tokyo"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "signup_secret_question_2_answer",
+                  "Toystory"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "rest-api-testing-framework-using-java-rest-assured-or-jayway-libraries;valid-scenario-3",
+        "description": "",
+        "name": "Valid scenario 3",
+        "keyword": "Scenario",
+        "line": 40,
+        "steps": [
+          {
+            "result": {
+              "duration": 190226520,
+              "status": "passed"
+            },
+            "name": "Valid simple user management application is running",
+            "keyword": "Given ",
+            "line": 41,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.valid_simple_user_management_application_is_running()"
+            }
+          },
+          {
+            "result": {
+              "duration": 97316482,
+              "status": "passed"
+            },
+            "name": "User performs GET signup parameters",
+            "keyword": "When ",
+            "line": 42,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_signup_parameters()"
+            }
+          },
+          {
+            "result": {
+              "duration": 94162851,
+              "status": "passed"
+            },
+            "name": "User performs POST signup with email id \"Happy03@aaa.com\" to create account",
+            "keyword": "And ",
+            "line": 43,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Happy03@aaa.com",
+                  "offset": 41
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_signup_with_email_id_to_create_account(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 89534843,
+              "status": "passed"
+            },
+            "name": "User performs GET to activate account",
+            "keyword": "And ",
+            "line": 44,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_to_activate_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 77851475,
+              "status": "passed"
+            },
+            "name": "User performs POST to signin account",
+            "keyword": "And ",
+            "line": 45,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_to_signin_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 58945079,
+              "status": "passed"
+            },
+            "name": "User performs GET forget password to get secret questions",
+            "keyword": "And ",
+            "line": 46,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_forget_password_to_get_secret_questions()"
+            }
+          },
+          {
+            "result": {
+              "duration": 70851720,
+              "status": "passed"
+            },
+            "name": "User performs PUT to reset password",
+            "keyword": "And ",
+            "line": 47,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_PUT_to_reset_password()"
+            }
+          },
+          {
+            "result": {
+              "duration": 64292525,
+              "status": "passed"
+            },
+            "name": "User performs DELETE to signout account",
+            "keyword": "And ",
+            "line": 48,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_DELETE_to_signout_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 69876074,
+              "status": "passed"
+            },
+            "name": "User performs POST to signin account",
+            "keyword": "And ",
+            "line": 49,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_to_signin_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 10028756096,
+              "status": "passed"
+            },
+            "name": "Each user action should be successful",
+            "keyword": "Then ",
+            "line": 50,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.each_user_action_should_be_successful()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 4119867,
+              "status": "passed"
+            },
+            "name": "General init",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.general_init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 137301,
+              "status": "passed"
+            },
+            "name": "Basic web application endpoint url is \"http://localhost:8080/imademethink/restfulapi/account_basic/\"",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/imademethink/restfulapi/account_basic/",
+                  "offset": 39
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.basic_web_application_endpoint_url_is(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 192905,
+              "status": "passed"
+            },
+            "name": "Basic user details are",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.basic_user_details_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "particular",
+                  "value"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "password",
+                  "d9aPass"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "first_name",
+                  "Sheldon"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "last_name",
+                  "Cooper"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "gender",
+                  "m"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "signup_secret_question_1_answer",
+                  "Tokyo"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "signup_secret_question_2_answer",
+                  "Toystory"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "rest-api-testing-framework-using-java-rest-assured-or-jayway-libraries;invalid-scenario-1",
+        "description": "",
+        "name": "Invalid scenario 1",
+        "keyword": "Scenario",
+        "line": 52,
+        "steps": [
+          {
+            "result": {
+              "duration": 85595476,
+              "status": "passed"
+            },
+            "name": "Valid simple user management application is running",
+            "keyword": "Given ",
+            "line": 53,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.valid_simple_user_management_application_is_running()"
+            }
+          },
+          {
+            "result": {
+              "duration": 69184868,
+              "status": "passed"
+            },
+            "name": "User performs GET signup parameters",
+            "keyword": "When ",
+            "line": 54,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_signup_parameters()"
+            }
+          },
+          {
+            "result": {
+              "duration": 77059324,
+              "status": "passed"
+            },
+            "name": "User performs POST signup with email id \"Sad01@aaa.com\" to create account",
+            "keyword": "And ",
+            "line": 55,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sad01@aaa.com",
+                  "offset": 41
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_signup_with_email_id_to_create_account(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 120363705,
+              "status": "passed"
+            },
+            "name": "User performs POST to signin account",
+            "keyword": "And ",
+            "line": 56,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_to_signin_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 72445860,
+              "status": "passed"
+            },
+            "name": "User performs DELETE to signout account with fake session id and \"invalid scenario 1\"",
+            "keyword": "And ",
+            "line": 57,
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid scenario 1",
+                  "offset": 66
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_DELETE_to_signout_account_with_fake_session_id(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 10013189822,
+              "status": "passed"
+            },
+            "name": "Each user action should be successful",
+            "keyword": "Then ",
+            "line": 58,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.each_user_action_should_be_successful()"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "name": "",
+        "keyword": "Background",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 2241718,
+              "status": "passed"
+            },
+            "name": "General init",
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.general_init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 147993,
+              "status": "passed"
+            },
+            "name": "Basic web application endpoint url is \"http://localhost:8080/imademethink/restfulapi/account_basic/\"",
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/imademethink/restfulapi/account_basic/",
+                  "offset": 39
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.basic_web_application_endpoint_url_is(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 198893,
+              "status": "passed"
+            },
+            "name": "Basic user details are",
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.basic_user_details_are(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "particular",
+                  "value"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "password",
+                  "d9aPass"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "first_name",
+                  "Sheldon"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "last_name",
+                  "Cooper"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "gender",
+                  "m"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "signup_secret_question_1_answer",
+                  "Tokyo"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "signup_secret_question_2_answer",
+                  "Toystory"
+                ],
+                "line": 17
+              }
+            ]
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "id": "rest-api-testing-framework-using-java-rest-assured-or-jayway-libraries;invalid-scenario-2",
+        "description": "",
+        "name": "Invalid scenario 2",
+        "keyword": "Scenario",
+        "line": 60,
+        "steps": [
+          {
+            "result": {
+              "duration": 153142148,
+              "status": "passed"
+            },
+            "name": "Valid simple user management application is running",
+            "keyword": "Given ",
+            "line": 61,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.valid_simple_user_management_application_is_running()"
+            }
+          },
+          {
+            "result": {
+              "duration": 67734873,
+              "status": "passed"
+            },
+            "name": "User performs GET signup parameters",
+            "keyword": "When ",
+            "line": 62,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_signup_parameters()"
+            }
+          },
+          {
+            "result": {
+              "duration": 92497709,
+              "status": "passed"
+            },
+            "name": "User performs POST signup with email id \"Sad02@aaa.com\" to create account",
+            "keyword": "And ",
+            "line": 63,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sad02@aaa.com",
+                  "offset": 41
+                }
+              ],
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_signup_with_email_id_to_create_account(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 115187779,
+              "status": "passed"
+            },
+            "name": "User performs GET to activate account",
+            "keyword": "And ",
+            "line": 64,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_to_activate_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 55535667,
+              "status": "passed"
+            },
+            "name": "User performs POST to signin account",
+            "keyword": "And ",
+            "line": 65,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_POST_to_signin_account()"
+            }
+          },
+          {
+            "result": {
+              "duration": 86125429,
+              "status": "passed"
+            },
+            "name": "User performs GET account profile with content type as XML",
+            "keyword": "And ",
+            "line": 66,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_GET_account_profile_with_content_type_as_XML()"
+            }
+          },
+          {
+            "result": {
+              "duration": 69235767,
+              "status": "passed"
+            },
+            "name": "User performs DELETE to signout account with acceptable content type as XML",
+            "keyword": "And ",
+            "line": 67,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.user_performs_DELETE_to_signout_account_with_acceptable_content_type_as_XML()"
+            }
+          },
+          {
+            "result": {
+              "duration": 10012709913,
+              "status": "passed"
+            },
+            "name": "Each user action should be successful",
+            "keyword": "Then ",
+            "line": 68,
+            "match": {
+              "location": "BddStepDefinitions_REST_API.each_user_action_should_be_successful()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "REST_API_Testging_using_RESTAssured.feature"
+  }
+]

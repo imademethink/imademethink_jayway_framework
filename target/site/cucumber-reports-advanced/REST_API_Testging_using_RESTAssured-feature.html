@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: REST API testing framework using Java REST Assured or JayWay Libraries </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>imademethink_jayway_framework</td>
+                          <td>218</td>
+                        <td>18 Sep 2017, 00:44</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-REST API testing framework using Java REST Assured or JayWay Libraries" href="REST_API_Testging_using_RESTAssured-feature.html">REST API testing framework using Java REST Assured or JayWay Libraries</a></td>
+            <td id="stats-number-scenarios-REST API testing framework using Java REST Assured or JayWay Libraries">5</td>
+      <td id="stats-number-scenarios-passed-REST API testing framework using Java REST Assured or JayWay Libraries">5</td>
+      <td id="stats-number-scenarios-failed-REST API testing framework using Java REST Assured or JayWay Libraries">0</td>
+      <td id="stats-number-steps-REST API testing framework using Java REST Assured or JayWay Libraries">56</td>
+      <td id="stats-number-steps-passed-REST API testing framework using Java REST Assured or JayWay Libraries">56</td>
+      <td id="stats-number-steps-failed-REST API testing framework using Java REST Assured or JayWay Libraries"    >0</td>
+      <td id="stats-number-steps-skipped-REST API testing framework using Java REST Assured or JayWay Libraries"   >0</td>
+      <td id="stats-number-steps-pending-REST API testing framework using Java REST Assured or JayWay Libraries"   >0</td>
+      <td id="stats-number-steps-undefined-REST API testing framework using Java REST Assured or JayWay Libraries" >0</td>
+      <td id="stats-number-steps-missing-REST API testing framework using Java REST Assured or JayWay Libraries"   >0</td>
+      <td id="stats-duration-REST API testing framework using Java REST Assured or JayWay Libraries" class="duration-format">1m 04s 594ms</td>
+      <td id="stats-status-REST API testing framework using Java REST Assured or JayWay Libraries" class="passed">Passed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="passed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>REST API testing framework using Java REST Assured or JayWay Libraries
+    </div>
+  </div>
+  <div class="feature-description">Raise request(s) using REST Assured library
+Validate HTTP response code and parse JSON response using REST Assured library
+Cross check the server logs for each REST API request
+Make sure to run the intended REST API based web application as pre-condition</div>
+
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">General init</span><span class="step-duration">675ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic web application endpoint url is &quot;http://localhost:8080/imademethink/restfulapi/account_basic/&quot;</span><span class="step-duration">005ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic user details are</span><span class="step-duration">004ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>particular</td>
+                          <td>value</td>
+                      </tr>
+                  <tr>
+                          <td>password</td>
+                          <td>d9aPass</td>
+                      </tr>
+                  <tr>
+                          <td>first_name</td>
+                          <td>Sheldon</td>
+                      </tr>
+                  <tr>
+                          <td>last_name</td>
+                          <td>Cooper</td>
+                      </tr>
+                  <tr>
+                          <td>gender</td>
+                          <td>m</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_1_answer</td>
+                          <td>Tokyo</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_2_answer</td>
+                          <td>Toystory</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Valid scenario 1</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">Valid simple user management application is running</span><span class="step-duration">10s 017ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User performs GET signup parameters</span><span class="step-duration">217ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST signup with email id &quot;Happy01@aaa.com&quot; to create account</span><span class="step-duration">328ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET to activate account</span><span class="step-duration">150ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST to signin account</span><span class="step-duration">080ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs DELETE to signout account</span><span class="step-duration">097ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">Each user action should be successful</span><span class="step-duration">10s 096ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">General init</span><span class="step-duration">003ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic web application endpoint url is &quot;http://localhost:8080/imademethink/restfulapi/account_basic/&quot;</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic user details are</span><span class="step-duration">000ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>particular</td>
+                          <td>value</td>
+                      </tr>
+                  <tr>
+                          <td>password</td>
+                          <td>d9aPass</td>
+                      </tr>
+                  <tr>
+                          <td>first_name</td>
+                          <td>Sheldon</td>
+                      </tr>
+                  <tr>
+                          <td>last_name</td>
+                          <td>Cooper</td>
+                      </tr>
+                  <tr>
+                          <td>gender</td>
+                          <td>m</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_1_answer</td>
+                          <td>Tokyo</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_2_answer</td>
+                          <td>Toystory</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Valid scenario 2</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">Valid simple user management application is running</span><span class="step-duration">138ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User performs GET signup parameters</span><span class="step-duration">115ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST signup with email id &quot;Happy02@aaa.com&quot; to create account</span><span class="step-duration">122ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET to activate account</span><span class="step-duration">134ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST to signin account</span><span class="step-duration">091ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET account profile</span><span class="step-duration">120ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs PUT to modify account profile with first name &quot;Jack&quot; and last name &quot;Black&quot; and &quot;valid scenario 2&quot;</span><span class="step-duration">102ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET account profile to match updated account profile</span><span class="step-duration">070ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs DELETE to signout account</span><span class="step-duration">065ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">Each user action should be successful</span><span class="step-duration">10s 014ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">General init</span><span class="step-duration">002ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic web application endpoint url is &quot;http://localhost:8080/imademethink/restfulapi/account_basic/&quot;</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic user details are</span><span class="step-duration">000ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>particular</td>
+                          <td>value</td>
+                      </tr>
+                  <tr>
+                          <td>password</td>
+                          <td>d9aPass</td>
+                      </tr>
+                  <tr>
+                          <td>first_name</td>
+                          <td>Sheldon</td>
+                      </tr>
+                  <tr>
+                          <td>last_name</td>
+                          <td>Cooper</td>
+                      </tr>
+                  <tr>
+                          <td>gender</td>
+                          <td>m</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_1_answer</td>
+                          <td>Tokyo</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_2_answer</td>
+                          <td>Toystory</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Valid scenario 3</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">Valid simple user management application is running</span><span class="step-duration">190ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User performs GET signup parameters</span><span class="step-duration">097ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST signup with email id &quot;Happy03@aaa.com&quot; to create account</span><span class="step-duration">094ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET to activate account</span><span class="step-duration">089ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST to signin account</span><span class="step-duration">077ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET forget password to get secret questions</span><span class="step-duration">058ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs PUT to reset password</span><span class="step-duration">070ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs DELETE to signout account</span><span class="step-duration">064ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST to signin account</span><span class="step-duration">069ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">Each user action should be successful</span><span class="step-duration">10s 028ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">General init</span><span class="step-duration">004ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic web application endpoint url is &quot;http://localhost:8080/imademethink/restfulapi/account_basic/&quot;</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic user details are</span><span class="step-duration">000ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>particular</td>
+                          <td>value</td>
+                      </tr>
+                  <tr>
+                          <td>password</td>
+                          <td>d9aPass</td>
+                      </tr>
+                  <tr>
+                          <td>first_name</td>
+                          <td>Sheldon</td>
+                      </tr>
+                  <tr>
+                          <td>last_name</td>
+                          <td>Cooper</td>
+                      </tr>
+                  <tr>
+                          <td>gender</td>
+                          <td>m</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_1_answer</td>
+                          <td>Tokyo</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_2_answer</td>
+                          <td>Toystory</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Invalid scenario 1</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">Valid simple user management application is running</span><span class="step-duration">085ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User performs GET signup parameters</span><span class="step-duration">069ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST signup with email id &quot;Sad01@aaa.com&quot; to create account</span><span class="step-duration">077ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST to signin account</span><span class="step-duration">120ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs DELETE to signout account with fake session id and &quot;invalid scenario 1&quot;</span><span class="step-duration">072ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">Each user action should be successful</span><span class="step-duration">10s 013ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Background: </span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">General init</span><span class="step-duration">002ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic web application endpoint url is &quot;http://localhost:8080/imademethink/restfulapi/account_basic/&quot;</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">Basic user details are</span><span class="step-duration">000ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>particular</td>
+                          <td>value</td>
+                      </tr>
+                  <tr>
+                          <td>password</td>
+                          <td>d9aPass</td>
+                      </tr>
+                  <tr>
+                          <td>first_name</td>
+                          <td>Sheldon</td>
+                      </tr>
+                  <tr>
+                          <td>last_name</td>
+                          <td>Cooper</td>
+                      </tr>
+                  <tr>
+                          <td>gender</td>
+                          <td>m</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_1_answer</td>
+                          <td>Tokyo</td>
+                      </tr>
+                  <tr>
+                          <td>signup_secret_question_2_answer</td>
+                          <td>Toystory</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Invalid scenario 2</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">Valid simple user management application is running</span><span class="step-duration">153ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User performs GET signup parameters</span><span class="step-duration">067ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST signup with email id &quot;Sad02@aaa.com&quot; to create account</span><span class="step-duration">092ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET to activate account</span><span class="step-duration">115ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs POST to signin account</span><span class="step-duration">055ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs GET account profile with content type as XML</span><span class="step-duration">086ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">User performs DELETE to signout account with acceptable content type as XML</span><span class="step-duration">069ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">Each user action should be successful</span><span class="step-duration">10s 012ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

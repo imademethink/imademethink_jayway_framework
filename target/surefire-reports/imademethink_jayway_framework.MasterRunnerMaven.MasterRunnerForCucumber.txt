@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: imademethink_jayway_framework.MasterRunnerMaven.MasterRunnerForCucumber
+-------------------------------------------------------------------------------
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 65.933 sec - in imademethink_jayway_framework.MasterRunnerMaven.MasterRunnerForCucumber
